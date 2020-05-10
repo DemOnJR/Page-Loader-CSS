@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page loader demo</title>
+  <!-- Loader CSS -->
+  <link type="text/css" rel="stylesheet" href="loader.css">
+</head>
+<!-- Your own css loader here -->
+<div class="loader-wraper">
+  <div class="multi-spinner-container">
+    <div class="multi-spinner">
+      <div class="multi-spinner">
+        <div class="multi-spinner">
+         <div class="multi-spinner">
+            <div class="multi-spinner">
+              <div class="multi-spinner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<body>
+<div class="container">
+  Your page here!
+</div>
+
+And here...
+
+<script type="text/javascript">
+  $(window).on("load",function(){
+    $(' html, body').css({overflow: 'auto'});
+    $(".loader-wraper").fadeOut("slow");
+  })
+</script>
+</body>
+</html>
+
